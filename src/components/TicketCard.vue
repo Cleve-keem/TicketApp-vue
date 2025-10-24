@@ -1,16 +1,13 @@
 <template>
-  <div class="bg-white p-4 rounded-lg shadow flex justify-between items-start">
+  <div class="">
     <div>
-      <h4 class="text-lg font-semibold">{{ ticket.title }}</h4>
-      <p class="text-sm text-gray-600">{{ ticket.description }}</p>
-      <span
-        :class="statusClass"
-        class="text-xs font-medium px-2 py-1 rounded mt-2 inline-block"
-      >
+      <h4 class="">{{ ticket.title }}</h4>
+      <p class="">{{ ticket.description }}</p>
+      <span :class="statusClass" class="">
         {{ ticket.status }}
       </span>
     </div>
-    <button @click="remove" class="text-red-500 text-sm">Delete</button>
+    <button @click="remove" class="">Delete</button>
   </div>
 </template>
 

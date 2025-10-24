@@ -4,7 +4,7 @@
       <router-link to="/dashboard" class="nav_header">🎟️ TicketApp</router-link>
       <div class="nav_logout" v-if="show">
         <router-link to="/tickets">Tickets</router-link>
-        <button @click="logout" class="text-red-600 font-medium">Logout</button>
+        <button @click="logout" class="">Logout</button>
       </div>
     </div>
   </nav>

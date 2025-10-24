@@ -1,25 +1,24 @@
 <template>
-  <div class="max-w-5xl mx-auto px-6 py-10">
-    <h2 class="text-3xl font-bold mb-6">Dashboard</h2>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="bg-green-100 p-4 rounded-lg shadow">
-        <h3 class="text-lg font-semibold">Total Tickets</h3>
-        <p class="text-2xl">{{ total }}</p>
+  <div class="">
+    <h2 class="">Dashboard</h2>
+    <div class="">
+      <div class="">
+        <h3 class="">Total Tickets</h3>
+        <p class="">{{ total }}</p>
       </div>
-      <div class="bg-yellow-100 p-4 rounded-lg shadow">
-        <h3 class="text-lg font-semibold">Open</h3>
-        <p class="text-2xl">{{ open }}</p>
+      <div class="">
+        <h3 class="">Open</h3>
+        <p class="">{{ open }}</p>
       </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <h3 class="text-lg font-semibold">Closed</h3>
-        <p class="text-2xl">{{ closed }}</p>
+      <div class="">
+        <h3 class="">Closed</h3>
+        <p class="">{{ closed }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import Navbar from "../components/Navbar.vue";
 import { useTickets } from "../store/useTicket";
 
 const ticketsStore = useTickets();

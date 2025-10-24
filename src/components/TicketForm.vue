@@ -1,12 +1,8 @@
 <template>
-  <form @submit.prevent="submit" class="bg-white p-4 rounded-lg shadow">
-    <h3 class="text-xl font-semibold mb-4">Create New Ticket</h3>
-    <input
-      v-model="title"
-      placeholder="Title"
-      class="border p-2 mb-3 w-full rounded"
-    />
-    <select v-model="status" class="border p-2 mb-3 w-full rounded">
+  <form @submit.prevent="submit" class="">
+    <h3 class="">Create New Ticket</h3>
+    <input v-model="title" placeholder="Title" class="" />
+    <select v-model="status" class="">
       <option value="">Select status</option>
       <option value="open">Open</option>
       <option value="in_progress">In Progress</option>
@@ -15,10 +11,10 @@
     <textarea
       v-model="description"
       placeholder="Description"
-      class="border p-2 mb-3 w-full rounded"
+      class=""
     ></textarea>
-    <p v-if="error" class="text-red-500 text-sm mb-3">{{ error }}</p>
-    <button class="bg-blue-600 text-white px-4 py-2 rounded">Add Ticket</button>
+    <p v-if="error" class="">{{ error }}</p>
+    <button class="">Add Ticket</button>
   </form>
 </template>
 

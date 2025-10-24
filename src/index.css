@@ -21,11 +21,6 @@ a:hover {
   color: #222;
 }
 
-body {
-  max-width: 1440px;
-  min-height: 100vh;
-}
-
 main {
   width: 100%;
 }
@@ -86,6 +81,5 @@ button:hover {
 
   .container {
     background-color: #2e2c2c;
-    box-shadow: 1px 1px 8px #2e2c2c;
   }
 }
