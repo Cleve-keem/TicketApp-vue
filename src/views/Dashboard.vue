@@ -1,6 +1,5 @@
 <template>
   <div class="max-w-5xl mx-auto px-6 py-10">
-    <Navbar />
     <h2 class="text-3xl font-bold mb-6">Dashboard</h2>
     <div class="grid md:grid-cols-3 gap-4">
       <div class="bg-green-100 p-4 rounded-lg shadow">
