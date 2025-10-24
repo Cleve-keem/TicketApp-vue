@@ -10,25 +10,15 @@
           <p>Create an account with us to enjoy our platform</p>
           <div class="form-group">
             <label for="fullname">Fullname</label>
-            <input
-              v-model="formData.name"
-              type="text"
-              placeholder="Fullname"
-              class="border p-2 mb-3 w-full rounded"
-            />
-            <p v-if="errors.name" class="text-red-500 text-sm mb-3">
+            <input v-model="formData.name" type="text" placeholder="Fullname" />
+            <p v-if="errors.name" class="error">
               {{ errors.name }}
             </p>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input
-              v-model="formData.email"
-              type="email"
-              placeholder="Email"
-              class="border p-2 mb-3 w-full rounded"
-            />
-            <p v-if="errors.email" class="text-red-500 text-sm mb-3">
+            <input v-model="formData.email" type="email" placeholder="Email" />
+            <p v-if="errors.email" class="error">
               {{ errors.email }}
             </p>
           </div>
@@ -38,9 +28,8 @@
               v-model="formData.password"
               type="password"
               placeholder="Password"
-              class="border p-2 mb-3 w-full rounded"
             />
-            <p v-if="errors.password" class="text-red-500 text-sm mb-3">
+            <p v-if="errors.password" class="error">
               {{ errors.password }}
             </p>
           </div>

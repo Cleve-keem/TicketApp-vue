@@ -41,7 +41,7 @@ h3 {
   margin: 0;
 }
 
-input{
+input {
   width: 100%;
 }
 
@@ -59,7 +59,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #2e2c2c;
   cursor: pointer;
   transition: border-color 0.25s;
   color: #f9f9f9;
@@ -71,7 +71,7 @@ button:hover {
 @media (prefers-color-scheme: dark) {
   :root {
     color: #fff;
-    background-color: #000;
+    background-color: #2e2c2c;
   }
   a {
     color: #fff;
@@ -81,6 +81,11 @@ button:hover {
   }
   button {
     background-color: #f9f9f9;
-    color: #000;
+    color: #2e2c2c;
+  }
+
+  .container {
+    background-color: #2e2c2c;
+    box-shadow: 1px 1px 8px #333232;
   }
 }
