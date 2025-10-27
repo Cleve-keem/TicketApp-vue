@@ -4,11 +4,13 @@
   width: 100%;
   height: 64px;
   background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .nav_container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background-color: inherit;
 }
@@ -117,7 +119,7 @@
   margin-bottom: 0.7rem;
 }
 
-.form-group input {
+.input {
   min-height: 40px;
   padding: 0 0.5rem;
   border-radius: 5px;
@@ -125,12 +127,16 @@
   font-size: 1rem;
 }
 
-.form-group input.error {
+.input.error {
   border-color: red;
   transition: border-color 0.25s;
 }
 
-.form-group p.error {
+select.error {
+  border-color: red;
+}
+
+.p.error {
   font-size: 0.7rem;
   color: red;
   margin: 0.2rem 0 0.4rem;
@@ -146,6 +152,129 @@
   text-align: center;
 }
 
-/* .signup_container{
-    
-} */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.16;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.circle-1 {
+  width: 220px;
+  height: 220px;
+  right: -40px;
+  top: -40px;
+  background: #0f1724;
+}
+.circle-2 {
+  width: 140px;
+  height: 140px;
+  left: -30px;
+  bottom: -30px;
+  background: #e02424;
+}
+
+/* layout cards */
+.card-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 20px;
+}
+.card {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 36, 0.06);
+}
+
+.card p {
+  color: var(--text);
+}
+
+/* stats */
+.stat-title {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+.stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fff;
+}
+.btn.primary {
+  background: linear-gradient(90deg, #0f1724, #6b7280);
+  color: white;
+}
+.btn.ghost {
+  border: 1px solid rgba(15, 23, 36, 0.06) !important;
+  color: var(--text);
+}
+.btn.danger {
+  background: #ff4d4f;
+  color: white;
+}
+
+/* ticket card */
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid rgba(15, 23, 36, 0.04);
+}
+.ticket-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ticket-title {
+  font-weight: 600;
+  margin: 0;
+}
+.ticket-desc {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+.tag {
+  padding: 2px 15px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* status colors */
+.tag.open {
+  background: #1db954;
+}
+.tag.in_progress {
+  background: #ffb020;
+  color: #111;
+}
+.tag.closed {
+  background: #9aa0a6;
+  color: #111;
+}

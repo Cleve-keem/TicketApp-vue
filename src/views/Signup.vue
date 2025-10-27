@@ -15,6 +15,7 @@
               type="text"
               placeholder="Fullname"
               :class="{ error: errors.name }"
+              class="input"
             />
             <p v-if="errors.name" class="error">
               {{ errors.name }}
@@ -27,6 +28,7 @@
               type="email"
               placeholder="Email"
               :class="{ error: errors.email }"
+              class="input"
             />
             <p v-if="errors.email" class="error">
               {{ errors.email }}
@@ -39,6 +41,7 @@
               type="password"
               placeholder="Password"
               :class="{ error: errors.password }"
+              class="input"
             />
             <p v-if="errors.password" class="error">
               {{ errors.password }}

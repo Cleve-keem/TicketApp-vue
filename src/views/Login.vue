@@ -12,6 +12,8 @@
               type="email"
               placeholder="Email"
               id="email"
+              class="input"
+              :class="{ error: errors.name }"
             />
             <p v-if="errors.email" class="">{{ errors.email }}</p>
           </div>
@@ -22,6 +24,8 @@
               type="password"
               placeholder="Password"
               id="password"
+              class="input"
+              :class="{ error: errors.name }"
             />
             <p v-if="errors.password" class="text-red-500 text-sm mb-3">
               {{ errors.password }}
@@ -31,7 +35,7 @@
         </form>
         <p class="account_link">
           Don't have account ?
-          <router-link to="/auth/signup">sign in</router-link>
+          <router-link to="/auth/signup">sign up</router-link>
         </p>
       </div>
     </div>
