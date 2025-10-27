@@ -30,7 +30,7 @@
     </div>
 
     <!-- All Tickets -->
-    <div class="card" style="margin-top: 4rem">
+    <div class="card" style="margin-top: 4rem" v-if="total > 0">
       <h3>All tickets</h3>
       <TicketCard
         v-for="t in ticketsStore.tickets"
