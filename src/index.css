@@ -67,7 +67,7 @@ button:hover {
   border-color: #646cff;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     color: #fff;
     background-color: #2e2c2c;
@@ -86,4 +86,4 @@ button:hover {
   .container {
     background-color: #2e2c2c;
   }
-}
+} */
